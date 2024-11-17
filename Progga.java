@@ -1,3 +1,15 @@
+output:
+For switch case Press a buttun:6
+* * * * * *
+*         *
+*         *
+*         *
+*         *
+* * * * * *
+
+
+code:
+
 import java.util.*;
 
 public class Progga
@@ -19,4 +31,7 @@ public class Progga
         System.out.println();
      }   
    }
-}
+
+
+
+
