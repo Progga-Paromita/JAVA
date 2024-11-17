@@ -1,3 +1,4 @@
+1.
 output:
 For switch case Press a buttun:6
 * * * * * *
@@ -35,3 +36,12 @@ public class Progga
 
 
 
+
+
+
+2.   
+Enter n=3
+Enter m=6
+* * * * * * 
+*         * 
+* * * * * *
