@@ -157,13 +157,7 @@ public class Progga
    }
 }
 
-
-
-
-
-
-
-5.
+or,
 Enter n=5
 * * * * *
 * * * *
@@ -200,7 +194,41 @@ public class Progga
 
 
 
+5.
+Enter n:5
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
 
+code:
+import java.util.*;
+public class Paromita
+{public static void main(String[] args) {
+  Scanner sc=new Scanner (System.in);
+  System.out.print("Enter n:");
+  int n=sc.nextInt();
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<i;j++)
+  {
+    System.out.print("  ");
+}
+    for(int j=1;j<=n-i+1;j++)
+  {
+    System.out.print("* ");
+}
+  System.out.println();
+  }}
+
+
+
+
+
+
+
+ 
 6.
 Enter n=5
 1 
@@ -233,9 +261,48 @@ public class Progga
 
 
 
-
-
 7.
+Enter n=5
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=1;i<=n;i++)
+     {  
+      for(int j=1;j<=n-i;j++)
+      {
+        System.out.print(" ");
+        System.out.print(" ");
+      }
+      for(int j=1;j<=i;j++)
+      {
+        System.out.print("*");
+        System.out.print(" ");
+      }
+        System.out.println();
+     } 
+   }
+}
+
+
+
+
+
+
+
+
+
+8.
 Enter n=5
 5 4 3 2 1 
 4 3 2 1 
@@ -270,7 +337,7 @@ public class Progga
 
 
 
-8.
+9.
 Enter n=5
 1 2 3 4 5
 1 2 3 4
@@ -305,7 +372,7 @@ public class Progga
 
 
 
-9.
+10.
 Enter n=5
 1
 2 3
@@ -342,7 +409,7 @@ public class Progga
 
 
 
-9.
+11.
 Enter n=5
 1
 0 1
@@ -378,7 +445,7 @@ public class Progga
 
 
 
-10.
+12.
 Enter n=5
 1
 0 0
@@ -415,7 +482,7 @@ public class Progga
 
 
 
-11.
+13.
 Enter n=5
 1
 1 0
@@ -448,7 +515,233 @@ public class Progga
 
 
 
+14.
+Enter n=5
+*                 *
+* *             * *
+* * *         * * *
+* * * *     * * * *
+* * * * * * * * * *
+* * * * * * * * * *
+* * * *     * * * *
+* * *         * * *
+* *             * *
+*                 *
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=1;i<=n;i++)
+     {  
+      
+      for(int j=1;j<=i;j++)
+      {
+        System.out.print("* ");
+      }
+      for(int j=1;j<=2*(n-i);j++)
+      {
+        System.out.print("  ");     
+      }
+      for(int j=1;j<=i;j++)
+      {
+        System.out.print("* ");
+      }
+        System.out.println();
+     } 
+
+     for(int i=1;i<=n;i++)
+     {  
+      for(int j=n-i+1;j>=1;j--)
+      {
+        System.out.print("* ");
+      }
+      for(int j=1;j<=2*(i-1);j++)
+      {
+        System.out.print("  ");     
+      }
+      for(int j=1;j<=n-i+1;j++)
+      {
+        System.out.print("* ");
+      }
+        System.out.println();
+     } 
+   }
+}
 
 
 
 
+15.
+Enter n=5
+        * * * * *
+      * * * * *
+    * * * * *
+  * * * * *
+* * * * *
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=n;i>=1;i--)
+     {  
+      
+      for(int j=i-1;j>=1;j--)
+      {
+        System.out.print("  ");
+      }
+      for(int j=1;j<=n;j++)
+      {
+        System.out.print("* ");
+      }
+        System.out.println();
+     } 
+   }
+}
+
+
+
+
+
+16.
+Enter n=5
+        1
+      2   2
+    3   3   3
+  4   4   4   4
+5   5   5   5   5
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=1;i<=n;i++)
+     {  
+      
+      for(int j=n-i;j>=1;j--)
+      {
+        System.out.print("  ");
+      }
+      for(int j=1;j<=2*i-1;j++)
+      {
+        if(j%2==1)
+        {System.out.print(i);
+        System.out.print(" ");}
+        else
+        System.out.print("  ");
+      }
+        System.out.println();
+     } 
+   }
+}
+
+
+
+
+
+
+17.
+Enter n=5
+
+      1
+    2 1 2
+  3 2 1 2 3
+4 3 2 1 2 3 4
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=1;i<=n;i++)
+     {  
+      
+      for(int j=n-i;j>=1;j--)
+      {
+        System.out.print("  ");
+      }
+      for(int j=i-1;j>=1;j--)
+      {
+        System.out.print(j);
+        System.out.print(" ");
+        
+      }
+      if(i>=2)
+          {
+            for(int j=2;j<=i-1;j++)
+      {
+        System.out.print(j);
+        System.out.print(" ");
+        
+      }
+          }
+        System.out.println();
+     } 
+   }
+}
+
+
+
+
+
+18.Enter n=5
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+code:
+import java.util.*;
+public class Progga
+{
+   public static void main(String[] args) {
+    System.out.print("Enter n=");
+    Scanner s=new Scanner(System.in);
+     int n=s.nextInt();
+     for(int i=1;i<=n;i++)
+     {  
+      
+      for(int j=n-i;j>=1;j--)
+      {
+        System.out.print("  ");
+      }
+      for(int j=2*i-1;j>=1;j--)
+      {
+        System.out.print("* ");
+        
+      }
+        System.out.println();
+     } 
+     for(int i=1;i<=n;i++)
+     {  
+      
+      for(int j=1;j<=i-1;j++)
+      {
+        System.out.print("  ");
+      }
+      for(int j=1;j<=2*(n-i+1)-1;j++)
+      {
+        System.out.print("* ");
+        
+      }
+        System.out.println();
+     }
+   }
+}
