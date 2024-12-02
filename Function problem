@@ -1,4 +1,5 @@
 Find factorial of a number.
+
 code:
 import java.util.*;
 public class Progga
@@ -22,6 +23,12 @@ public class Progga
      System.out.println("THe factorial is:"+fact(n));
   }
 }
+
+
+
+
+Make a function to check if a number is prime or not.
+code:
 
 
 
