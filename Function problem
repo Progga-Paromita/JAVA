@@ -1,1 +1,27 @@
+Find factorial of a number.
+code:
+import java.util.*;
+public class Progga
+{
+  public static int fact(int x)
+
+  {
+       int f=1;
+        for(int i=x;i>=1;i--){
+           f=f*i;
+        }
+        return f;
+  }
+  public static void main(String[] args) {
+   Scanner sc=new Scanner (System.in);
+   System.out.print("Emter n:");
+   int n=sc.nextInt();
+ if(n<0)
+        System.out.println("Invalid number.");
+    else
+     System.out.println("THe factorial is:"+fact(n));
+  }
+}
+
+
 
